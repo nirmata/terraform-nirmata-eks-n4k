@@ -21,12 +21,12 @@ Make the necessary changes to the main.tf file
 ## Usage:
 
 ```
-module "n4k_module" {
-source                   = "./n4k_module"
-aws_eks_cluster_name     = "<<AWS EKS cluster name>>"
-nirmata_api_key          = "<<Nirmata API token>>"
-imagePullSecret_password = "<<Image pull secret token>>"
-nirmata_cluster_name     = "<<Name of the cluster to be registered in NPM>>"
+module "eks-npm" {
+  source                   = "nirmata/eks-npm/nirmata"
+  aws_eks_cluster_name     = "<<AWS EKS cluster name>>"
+  nirmata_api_key          = "<<Nirmata API token>>"
+  imagePullSecret_password = "<<Image pull secret token>>"
+  nirmata_cluster_name     = "<<Name of the cluster to be registered in NPM>>"
 }
 ```
 
@@ -35,11 +35,11 @@ terraform init
 ```
 
 ```
-terraform plan -target module.n4k_module.nirmata_cluster_registered.eks-registered
+terraform plan -target module.eks-npm.nirmata_cluster_registered.eks-registered
 ```
 
 ```
-terraform apply -target module.n4k_module.nirmata_cluster_registered.eks-registered
+terraform apply -target module.eks-npm.nirmata_cluster_registered.eks-registered
 ```
 
 ```
