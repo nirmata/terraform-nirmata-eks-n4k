@@ -2,9 +2,10 @@
 
 The terraform module deploys N4K, best practice policy set, and pod security policy set and registers the EKS cluster with NPM.
 
-Prerequisite:- 
+Prerequisites:- 
 
-	1. AWS CLI should be configured with EKS Cluster Access.
+	1. Existing EKS Cluster should be available.
+	2. AWS CLI should be configured with EKS Cluster Access.
 
 Note:- Currently this module is supported to:-
 
