@@ -15,7 +15,7 @@ Note:- Currently this module is supported to:-
 ## Steps to deploy the terraform module:
 
 ```
-Make the necessary changes to the main.tf file
+Make the necessary changes or replace the respective values to the main.tf file
 ```
 
 ## Usage:
