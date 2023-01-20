@@ -23,10 +23,10 @@ Make the necessary changes or replace the respective values to the main.tf file
 ```
 module "eks-npm" {
   source                   = "nirmata/eks-npm/nirmata"
-  aws_eks_cluster_name     = "<<AWS EKS cluster name>>"
-  nirmata_api_key          = "<<Nirmata API token>>"
-  licenseKey               = "<<License key>>"
-  nirmata_cluster_name     = "<<Name of the cluster to be registered in NPM>>"
+  aws_eks_cluster_name     = "AWS EKS cluster name"
+  nirmata_api_key          = "Nirmata API token"
+  licenseKey               = "License key value"
+  nirmata_cluster_name     = "Name of the cluster to be registered in NPM"
 }
 ```
 
